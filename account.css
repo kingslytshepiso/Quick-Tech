@@ -1,0 +1,18 @@
+.order {
+  z-index: 10px;
+  background-color: #eceff1;
+  padding-bottom: 200px;
+  width: 500px;
+  height: 10px;
+  margin-bottom: 10px;
+  border-radius: 0px;
+
+  box-sizing: content-box;
+  margin: 30px 15px;
+}
+
+.my-order {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

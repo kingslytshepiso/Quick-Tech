@@ -1,0 +1,110 @@
+/* Full-width input fields */
+input[type="text"],
+input[type="password"] {
+  text-align: center;
+  width: 100%;
+  padding: 15px;
+  margin: 2px 0 11px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+  text-align: centered;
+}
+form {
+  display: flex;
+  align-items: center;
+  color: white;
+}
+
+/* Set a style for all buttons */
+button {
+  background-color: black;
+  color: white;
+  padding: 5px 11px;
+  margin: 1px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+  text-align: center;
+}
+
+button:hover {
+  opacity: 1;
+}
+
+/* Float cancel and signup buttons and add an equal width */
+.signupbtn {
+  float: center;
+  width: 50%;
+  text-align: center;
+}
+
+/* Add padding to container elements */
+.user-form-container {
+  padding: 16px;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+/* Clear floats */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+  text-align: center;
+}
+
+/* Change styles for cancel button and signup button on extra small screens */
+@media screen and (max-width: 300px) {
+  .cancelbtn,
+  .signupbtn {
+    width: 100%;
+  }
+}
+
+header {
+  background: rgb(0, 0, 0, 0.8);
+}
+.container {
+  min-height: 100vh;
+}
+.nav-link i {
+  margin: 0.3em;
+}
+.nav-link i {
+  margin: 0.3em;
+}
+footer {
+  background: rgb(0, 0, 0, 0.8);
+  color: white;
+}
+.footer {
+  min-height: 300px;
+  margin-top: 30px;
+  padding: 0.5em;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.footer-item {
+  margin: 0.2em;
+  padding: 0.2em;
+}
+.footer-item-content {
+  margin: 0.2em;
+  padding: 0.2em;
+  display: flex;
+}

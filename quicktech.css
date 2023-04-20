@@ -1,0 +1,122 @@
+@font-face {
+  font-family: "Devis";
+  src: url("./fonts/devis-font/Devis-BWn1V.ttf");
+}
+* {
+  --quick-primary-color: #28282b;
+  --quick-secondary-color: white;
+  --quick-tertiary-color: #113065;
+}
+
+body {
+  /* background-image: url("./images/metal.jpg"); */
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.navbar {
+  background: var(--quick-primary-color);
+}
+header {
+  background: white;
+}
+.container {
+  min-height: 100vh;
+  color: black;
+}
+.nav-link i {
+  margin: 0.3em;
+}
+.top-btn {
+  position: fixed;
+  right: 0px;
+  bottom: 4rem;
+  margin: 0.5em;
+  width: 7rem;
+}
+.btn-primary {
+  background: var(--quick-tertiary-color);
+  border-color: silver;
+}
+.btn-primary:hover {
+  background: white;
+  color: var(--quick-tertiary-color);
+  border-color: silver;
+}
+.btn-primary:focus,
+.btn-primary:active {
+  box-shadow: 0 0 0 0.2rem transparent;
+  border-color: silver;
+}
+.quick-item-container {
+  margin: 5rem 0.3em 0.3em 0.3em;
+  padding: 0.5em;
+  border-top: 0.5em solid var(--quick-tertiary-color);
+  background: rgba(0, 0, 0, 0.8);
+}
+.quick-item-container-g {
+  margin: 5rem 0.3em 0.3em 0.3em;
+  padding: 0.5em;
+  border-top: 0.5em solid green;
+  background: white;
+}
+footer {
+  background: var(--quick-primary-color);
+  color: white;
+}
+.footer {
+  min-height: 300px;
+  margin-top: 30px;
+  padding: 0.5em;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.footer-item {
+  margin: 0.2em;
+  padding: 0.2em;
+}
+.footer-item a {
+  color: white;
+}
+.footer-item-content {
+  margin: 0.2em;
+  padding: 0.2em;
+  display: flex;
+}
+.fa-bolt {
+  animation: 1s colors infinite;
+}
+.map {
+  padding: 0;
+}
+#msg_dialog {
+  display: block;
+  transition: 1s;
+}
+.nav-item:hover {
+  cursor: pointer;
+}
+.map iframe {
+  width: 100%;
+  height: 100%;
+}
+@keyframes colors {
+  0% {
+    color: white;
+  }
+  50% {
+    color: var(--quick-primary-color);
+  }
+  100% {
+    color: var(--quick-tertiary-color);
+  }
+}
+.top-fade {
+  /* transition: 500ms;
+  animation: 1s fade normal; */
+  position: fixed;
+  top: 0;
+  left: 0;
+}

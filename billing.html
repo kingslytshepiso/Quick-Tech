@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>QuickTech | Billing</title>
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./quicktech.css" />
+    <link rel="stylesheet" href="./billing-styling.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar fixed-top navbar-expand-lg navbar-dark">
+        <a class="navbar-brand align-middle" href="./index-in.html">
+          <div class="d-flex flex-column">
+            <div class="d-flex justify-content-center">
+              <img
+                height="30"
+                width="30"
+                class="lightning-lg"
+                src="./images/lightning-white.png"
+                alt="lightning"
+              />
+            </div>
+
+            <span>QuickTech</span>
+          </div>
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-md-end"
+          id="navbarSupportedContent"
+        >
+          <div class="">
+            <ul class="navbar-nav mr-auto nav-pills">
+              <li class="nav-item">
+                <a class="nav-link" href="./signed-in-products.html">
+                  <span><i class="fa-sharp fa-solid fa-house"></i></span>Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./signed-in-products.html">
+                  <span><i class="fa-sharp fa-solid fa-desktop"></i></span
+                  >Products</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./checkout.html">
+                  <span><i class="fas fa-shopping-cart"></i></span>Checkout
+                  <span class="badge badge-light">4</span></a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./account.html">
+                  <span
+                    ><i class="fa fa-user-circle" aria-hidden="true"></i></span
+                  >My Account</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="signOutBtn">
+                  <span><i class="fa-solid fa-user-plus"></i></span>Sign out
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main class="mt-5 pt-5">
+      <div id="category" class="container pl-1 pr-1">
+        <div class="quick-item-container">
+          <div class="d-flex justify-content-center">
+            <div class="inputBox">
+              <!-- <span>Cards accepted :</span> -->
+              <img src="./images/cards.png" alt="" />
+            </div>
+          </div>
+
+          <div class="billing-form">
+            <form action="">
+              <div
+                class="d-flex justify-content-md-center flex-md-row flex-column"
+              >
+                <div class="row m-3 border-right">
+                  <div class="col">
+                    <h3>Billing Address</h3>
+
+                    <div class="flex">
+                      <div class="inputBox">
+                        <span>Full Name:</span>
+                        <input type="text" placeholder="Ruth Hlongwane" />
+                      </div>
+
+                      <div class="inputBox">
+                        <span>Email:</span>
+                        <input type="text" placeholder=" example@gmail.com " />
+                      </div>
+                    </div>
+                    <div class="flex">
+                      <div class="inputBox">
+                        <span>Address:</span>
+                        <input type="text" placeholder="557 pretorius street" />
+                      </div>
+                      <div class="inputBox">
+                        <span>City:</span>
+                        <input type="text" placeholder="pretoria" />
+                      </div>
+                    </div>
+                    <div class="flex">
+                      <div class="inputBox">
+                        <span>Zip code:</span>
+                        <input type="text" placeholder="0001" />
+                      </div>
+                      <div class="inputBox">
+                        <span>State:</span>
+                        <input type="text" placeholder="south africa" />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row m-3">
+                  <div class="col">
+                    <h3 class="d-flex flex-row">
+                      <span>Payment</span>
+                    </h3>
+
+                    <div class="flex">
+                      <div class="inputBox">
+                        <span>Name on Card:</span>
+                        <input type="text" placeholder="Ruth Hlongwane" />
+                      </div>
+
+                      <div class="inputBox">
+                        <span>Card number:</span>
+                        <input type="text" placeholder=" 1111-2222-3333-4444" />
+                      </div>
+                    </div>
+
+                    <div class="flex">
+                      <div class="inputBox">
+                        <span>Exp Month:</span>
+                        <input type="text" placeholder="October" />
+                      </div>
+
+                      <div class="inputBox">
+                        <span>Exp Year:</span>
+                        <input type="" placeholder="2015" />
+                      </div>
+                    </div>
+
+                    <div class="inputBox">
+                      <span>CVV:</span>
+                      <input type="text" placeholder="335" />
+                    </div>
+                    <div class="inputBox">
+                      <input
+                        type="submit"
+                        value="Proceed to Pay"
+                        class="btn btn-primary"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row"></div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="footer">
+        <div class="footer-item">
+          <h6>Products</h6>
+          <div class="footer-item-content">
+            <a class="nav-link" href="./signed-out-products.html#computers">
+              <i class="fa-solid fa-desktop"></i>Desktops
+            </a>
+          </div>
+          <div class="footer-item-content">
+            <a class="nav-link" href="./signed-out-products.html#computers">
+              <i class="fa-solid fa-laptop"></i>Laptops
+            </a>
+          </div>
+          <div class="footer-item-content">
+            <a class="nav-link" href="./signed-out-products.html#accessories">
+              <i class="fa-solid fa-keyboard"></i>Accessories
+            </a>
+          </div>
+          <div class="footer-item-content">
+            <a class="nav-link" href="./signed-out-products.html#components">
+              <i class="fa-solid fa-memory"></i>Components
+            </a>
+          </div>
+          <div class="footer-item-content">
+            <a class="nav-link" href="./signed-out-products.html#build">
+              <i class="fa-regular fa-microchip"></i>Hardware
+            </a>
+          </div>
+        </div>
+        <div class="footer-item">
+          <h6>Address</h6>
+          <div class="footer-item-content">
+            <a class="nav-link">
+              <i class="fa-solid fa-location-dot"></i>12 Ameshoff str,
+              Braamfontein<br />
+              Johannesburg<br />
+              South Africa<br />
+            </a>
+          </div>
+          <br />
+        </div>
+        <div class="footer-item">
+          <h6>Contact us</h6>
+          <div class="footer-item-content">
+            <a class="nav-link" href="mailto:info@quick-tech.co.za">
+              <i class="fa-solid fa-envelope"></i>info@quick-tech.co.za
+            </a>
+          </div>
+          <div class="footer-item-content">
+            <a class="nav-link" href="tel:0887837236">
+              <i class="fa-solid fa-phone"></i>0887837236
+            </a>
+          </div>
+        </div>
+        <div class="map">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m26!1m12!1m3!1d7160.2929534849945!2d28.029179475230745!3d-26.191912983773207!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m11!3e6!4m3!3m2!1d-26.1906346!2d28.030307399999998!4m5!1s0x1e950c1a3dba1ca5%3A0xb769ba64b87b6a44!2scapaciti%20braamfontein!3m2!1d-26.1906379!2d28.0372582!5e0!3m2!1sen!2sza!4v1681388983025!5m2!1sen!2sza"
+            width="600"
+            height="450"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </div>
+      <p class="text-center m-0">©2023 - QuickTech</p>
+    </footer>
+
+    <script src="./Jquery/jquery-3.6.4.js"></script>
+    <script src="./bootstrap/js/bootstrap.min.js"></script>
+    <script src="./js/cookie-setttings.js"></script>
+    <script src="./js/data.js"></script>
+    <script src="./js/user-session-management.js"></script>
+    <script src="./js/cart.js"></script>
+    <script src="./js/site.js"></script>
+  </body>
+</html>

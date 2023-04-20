@@ -1,0 +1,43 @@
+.content {
+  display: flex;
+  margin-top: 150px;
+  flex-direction: column;
+}
+main {
+  color: black;
+}
+.content h1 {
+  font-size: 50px;
+}
+#btn button {
+  width: 150px;
+  height: 32px;
+  background: transparent;
+  border: 1px solid black;
+  letter-spacing: 3px;
+  font-weight: bold;
+  transition: 0.5 ease;
+  cursor: pointer;
+}
+#btn button:hover {
+  background-color: white;
+}
+.home-v-display {
+  margin: 2.5em;
+  padding: 1em;
+  width: auto;
+}
+.home-v-display video {
+  width: min-content;
+}
+/* 
+@media screen and (max-width: 1200px) {
+  .home-v-display {
+    width: 40%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .home-v-display video {
+    width: 90%;
+  }
+} */
